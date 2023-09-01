@@ -6,3 +6,10 @@ add members data:
         from members.models import Member
         member = Member(firstname='firstname_here', lastname='lastname_here', phone=xxxx, joined_date = '2011-09-15')
         member.save()
+
+Update members data: 
+    py manage.py shell
+        from members.models import Member
+        x = Member.objects.all()[ID]
+        x.ATTRIBUTE = NEW_VALUE
+        x.save()
