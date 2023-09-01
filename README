@@ -5,3 +5,4 @@ add members data:
     py manage.py shell 
         from members.models import Member
         member = Member(firstname='firstname_here', lastname='lastname_here', phone=xxxx, joined_date = '2011-09-15')
+        member.save()
