@@ -6,6 +6,9 @@ My Site - List of all members
 
 
 {% block content %}
+<!-- Link to main "/" -->
+<p><a href="/">HOME</a></p>
+
 <h1>Members</h1>
 
 <ul>
@@ -13,4 +16,5 @@ My Site - List of all members
   <li><a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a></li>
   {% endfor %}
 </ul>
+
 {% endblock %}
