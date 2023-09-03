@@ -1,3 +1,8 @@
+firsttime setup:
+    pip install django 
+    pip install whitenoise
+    py .\manage.py collectstatic
+
 run the server:
     "py manage.py runserver"
 
@@ -13,3 +18,7 @@ Update members data:
         x = Member.objects.all()[ID]
         x.ATTRIBUTE = NEW_VALUE
         x.save()
+        
+admin maker:
+    py manage.py createsuperuser 
+    #Follow Instructions and try on host/admin
