@@ -22,3 +22,4 @@ Update members data:
 admin maker:
     py manage.py createsuperuser 
     #Follow Instructions and try on host/admin
+    #Tested OK
