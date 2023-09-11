@@ -1,12 +1,16 @@
-<!DOCTYPE html>
-<html>
-<body>
+{% extends "master.html" %}
 
-{% for x in fruits %}
-  <h1>{{ x }}</h1>
-{% endfor %}
 
-<p>In views.py you can see what the fruits variable looks like.</p>
+{% block title %}
+  My Tennis Club
+{% endblock %}
 
-</body>
-</html>
+{% block content %}
+
+<ul>
+  {% for x in y %}
+    {{ x }}
+  {% endfor %}
+</ul>
+  
+{% endblock %}
